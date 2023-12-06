@@ -2,10 +2,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="">
-      <header className="">
-      </header>
-    </div>
+    <header className="header">
+      <h1>Skul: The Hero Slayer Item Builder</h1>
+      <nav></nav>
+    </header>
   );
 }
 
