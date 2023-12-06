@@ -1,11 +1,20 @@
-import './App.css';
+import './css/App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Home from './components/Home';
+import Header from './components/Header';
+
 
 function App() {
   return (
-    <header className="header">
-      <h1>Skul: The Hero Slayer Item Builder</h1>
-      <nav></nav>
-    </header>
+    <div>
+      <Router>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
+      </Router>
+    </div>
   );
 }
 
